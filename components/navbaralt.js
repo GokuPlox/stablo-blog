@@ -25,7 +25,7 @@ export default function NavbarAlt(props) {
       ]
     },
     {
-      label: "About",
+      label: "Nosotros",
       href: "/about"
     },
     {
@@ -92,7 +92,7 @@ export default function NavbarAlt(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        VRP
                       </span>
                     )}
                   </Link>
@@ -106,7 +106,7 @@ export default function NavbarAlt(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        VRP
                       </span>
                     )}
                   </Link>

@@ -13,35 +13,24 @@ import { myLoader } from "@/utils/all";
 export default function Navbar(props) {
   const leftmenu = [
     {
-      label: "Home",
+      label: "Inicio",
       href: "/"
     },
     {
-      label: "About",
+      label: "Nosotros",
       href: "/about"
     },
     {
-      label: "Contact",
+      label: "Contacto",
       href: "/contact"
     }
   ];
 
   const rightmenu = [
     {
-      label: "Archive",
+      label: "Archivo",
       href: "/archive"
     },
-    {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    },
-    {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
-    }
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
@@ -86,7 +75,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        VRP
                       </span>
                     )}
                   </Link>
@@ -100,7 +89,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        VRP
                       </span>
                     )}
                   </Link>

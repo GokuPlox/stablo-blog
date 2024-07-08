@@ -24,13 +24,13 @@ export default function Contact({ settings }) {
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState(false);
   // Please update the Access Key in the Sanity CMS - Site Congig Page
-  const apiKey = settings?.w3ckey || "YOUR_ACCESS_KEY_HERE";
+  const apiKey = settings?.w3ckey || "3c3a2497-f8ec-4bd9-9aef-7d6d3e1954a6";
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Stablo Template",
-      subject: "New Contact Message from Stablo Website"
+      from_name: "VRP",
+      subject: "New Contact Message from VRP Website"
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
@@ -46,26 +46,27 @@ export default function Contact({ settings }) {
   return (
     <Container>
       <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
-        Contact
+        Contacto
       </h1>
       <div className="text-center">
-        <p className="text-lg">We are a here to help.</p>
+        <p className="text-lg">Estoy aqui para ayudar.</p>
       </div>
 
       <div className="grid my-10 md:grid-cols-2">
         <div className="my-10">
           <h2 className="text-2xl font-semibold dark:text-white">
-            Contact Stablo
+            Contacto VRP
           </h2>
           <p className="max-w-sm mt-5">
-            Have something to say? We are here to help. Fill up the
-            form or send email or call phone.
+          ¿Tiene algo que decir? Estoy aquí para
+          ayudar. Rellene el formulario, envíe un
+          correo electrónico o llame al teléfono.
           </p>
 
           <div className="mt-5">
             <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
               <MapPinIcon className="w-4 h-4" />
-              <span>1734 Sanfransico, CA 93063</span>
+              <span>Coronel Brandzen 2008, 11200 Montevideo, Uruguay</span>
             </div>
             {settings?.email && (
               <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
@@ -95,7 +96,7 @@ export default function Contact({ settings }) {
             <div className="mb-5">
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="Nombre"
                 autoComplete="false"
                 className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
                   errors.name
@@ -121,7 +122,7 @@ export default function Contact({ settings }) {
               <input
                 id="email_address"
                 type="email"
-                placeholder="Email Address"
+                placeholder="Correo"
                 name="email"
                 autoComplete="false"
                 className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
@@ -147,7 +148,7 @@ export default function Contact({ settings }) {
             <div className="mb-3">
               <textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder="Mensaje"
                 className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
                   errors.message
                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
@@ -187,7 +188,7 @@ export default function Contact({ settings }) {
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
               ) : (
-                "Send Message"
+                "Enviar"
               )}
             </button>
           </form>

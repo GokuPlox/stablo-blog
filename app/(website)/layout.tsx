@@ -12,7 +12,7 @@ async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
+        "VRP LOGISTICA INTEGRAL",
       template: "%s | Stablo"
     },
     description:
@@ -51,7 +51,7 @@ export default async function Layout({ children, params }) {
   const settings = await getSettings();
   return (
     <>
-      <Navbar {...settings} />
+      {/* <Navbar {...settings} /> */}
 
       <div>{children}</div>
 
