@@ -15,7 +15,7 @@ export default function Post({ posts }) {
           className="w-full h-screen "
         />
         <div className="absolute top-0 left-0 w-full h-full flex items-center  flex-row  ">
-          <div className="flex-1 relative bg-white/50 flex flex-col justify-start items-center mx-32 my-3">
+          <div className="flex-1 relative bg-white/50 flex flex-col justify-start items-center mx-32 my-6 rounded-md border">
             <div className="flex-1">
               <div className="relative flex flex-col items-center">
                 <img
@@ -23,7 +23,7 @@ export default function Post({ posts }) {
                   className=" w-96 h-52 items-center"
                 />
               </div>
-              <div>
+              <div className="gap-3 py-3">
                 <p className="text-3xl font-semibold text-center text-black">Al servicio de su empresa</p>
                 <p className="text-center font-semibold text-black">Donde los negocios fluyen</p>
               </div>
